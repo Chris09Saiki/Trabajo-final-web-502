@@ -1,0 +1,91 @@
+/* clientes/clientes_new.css */
+
+body {
+    background: linear-gradient(135deg, #6fb1fc, #a1c4fd); /* Degradado de fondo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto; /* Centrar el contenedor */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#error_explanation {
+    background-color: #f8d7da; /* Fondo rojo claro para los errores */
+    color: #721c24; /* Color de texto rojo oscuro */
+    border: 1px solid #f5c6cb; /* Borde rojo claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre los campos del formulario */
+}
+
+label {
+    font-size: 1.1em;
+    color: #555;
+    display: block; /* Para que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Ancho completo del campo */
+    padding: 12px; /* Espaciado interno */
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave para el borde */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #0056b3; /* Color de borde más oscuro al enfocar */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Sombra al enfocar */
+}
+
+.actions {
+    text-align: center; /* Centrar el botón */
+}
+
+.btn {
+    padding: 12px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.2em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.btn-success {
+    background-color: #28a745; /* Color de fondo verde */
+    color: #fff; /* Color del texto */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Color de fondo gris */
+    color: #fff; /* Color del texto */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}

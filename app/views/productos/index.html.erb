@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag 'productos/productos_lista', media: 'all' %>
+<h1>Lista de Productos</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Precio</th>
+  </tr>
+  <% @productos.each do |producto| %>      <!-- Crea un tabla para cada producto -->
+    <tr>
+      <td><%= producto.id %></td>
+      <td><%= link_to producto.nombre_producto, producto_path(producto) %></td>  <!-- Nombre con enlace a detalles del producto--> 
+      <td><%= number_to_currency(producto.precio) %></td>  <!-- Mostrar precio como moneda -->
+    </tr>
+  <% end %>
+</table>

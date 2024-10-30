@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag 'productos/productos_detail', media: 'all' %>
+<h1>Detalles del Producto</h1>
+<p><strong>Nombre del Producto:</strong> <%= @producto.nombre_producto %></p>      <!-- Recupera los datos del producto --> 
+<p><strong>Precio:</strong> <%= number_to_currency(@producto.precio) %></p>
+<p><strong>Stock:</strong> <%= @producto.stock %></p>
+<p><strong>Descripción:</strong> <%= @producto.descripcion %></p>
+<p><strong>Proveedor:</strong> <%= @producto.proveedor.nombre_proveedor %></p>
+<!-- Muestra el nombre del proveedor asociado con el producto. -->
+<!-- Esto se accede a través de la relación entre el modelo Producto y el modelo Proveedor. -->
+
+<%= link_to 'Ir a la página de Pedidos', new_pedido_path, class: "btn btn-primary" %> <!-- Link para la página de pedidos -->

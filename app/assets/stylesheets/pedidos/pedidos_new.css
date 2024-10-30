@@ -1,0 +1,76 @@
+/* styles para el formulario de pedidos */
+body {
+    background-color: #e9ecef; /* Fondo claro y suave */
+}
+
+h1 {
+    text-align: center;
+    color: #4a4e69; /* Color oscuro para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-family: 'Arial', sans-serif; /* Fuente para el título */
+}
+
+form {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 20px; /* Espacio interno */
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+div {
+    margin-bottom: 15px; /* Espacio entre los campos del formulario */
+}
+
+label {
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #4a4e69; /* Color de las etiquetas */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #4a4e69; /* Borde color oscuro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+    font-size: 16px; /* Tamaño de fuente consistente */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #f67280; /* Color del borde al enfocarse */
+    outline: none; /* Sin borde de enfoque predeterminado */
+}
+
+input[type="submit"] {
+    background-color: #f67280; /* Color vibrante del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espacio interno del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    width: 100%; /* Botón ocupa el ancho completo */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+input[type="submit"]:hover {
+    background-color: #c06c84; /* Color al pasar el mouse */
+}
+
+/* Estilo para un mensaje de éxito o error */
+#notice {
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #f67280; /* Color para mensajes */
+}

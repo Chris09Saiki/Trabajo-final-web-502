@@ -1,0 +1,29 @@
+<%= stylesheet_link_tag 'clientes/clientes_lista', media: 'all' %>   <!-- enlace a estilos -->
+<h1>Lista de Clientes</h1>
+
+<%= link_to 'Registrar Nuevo Cliente', new_cliente_path, class: "btn btn-primary" %>   <!-- Link a nuevo cliente -->
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Teléfono</th>
+    <th>DNI</th>
+    <th>Email</th>
+    <th>Acciones</th>
+  </tr>
+  <% @clientes.each do |cliente| %>   <!-- Muestra todo los clientes que hay registrados en la tabla cliente -->
+    <tr>
+      <td><%= cliente.id %></td>
+      <td><%= cliente.nombre %></td>
+      <td><%= cliente.apellido %></td>
+      <td><%= cliente.telefono %></td>
+      <td><%= cliente.dni %></td>
+      <td><%= cliente.email %></td>
+      <td>
+        <%= link_to 'Ver Detalles', cliente_path(cliente), class: "btn btn-info" %>
+      </td>
+    </tr>
+  <% end %>
+</table>

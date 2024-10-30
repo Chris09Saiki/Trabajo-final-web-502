@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag 'empleados/empleados_lista', media: 'all' %>
+<h1>Lista de Empleados</h1>
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Cargo</th>
+  </tr>
+  <% @empleados.each do |empleado| %>
+    <tr>
+      <td><%= link_to empleado.nombre, empleado_path(empleado) %></td>
+      <td><%= empleado.cargo %></td>
+    </tr>
+  <% end %>
+</table>

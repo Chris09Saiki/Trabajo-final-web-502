@@ -1,0 +1,41 @@
+<%= stylesheet_link_tag 'pedidos/pedidos_detail', media: 'all' %>
+
+<div class="table-container">
+    <h1>Detalles del Pedido</h1>
+
+    <table>
+        <tr>
+            <th>ID del Pedido</th>
+            <td><%= @pedido.id %></td>
+        </tr>
+        <tr>
+            <th>Fecha del Pedido</th>
+            <td><%= @pedido.fecha_pedido %></td>
+        </tr>
+        <tr>
+            <th>Cliente</th>
+            <td><%= @cliente.nombre %></td>
+        </tr>
+        <tr>
+            <th>Empleado</th>
+            <td><%= @empleado.nombre %></td>
+        </tr>
+        <tr>
+            <th>Producto</th>
+            <td><%= @producto.nombre_producto %></td>
+        </tr>
+        <tr>
+            <th>Cantidad</th>
+            <td><%= @pedido.cantidad %></td>
+        </tr>
+        <tr>
+            <th>Precio Unitario</th>
+            <td><%= number_to_currency(@pedido.precio_unitario) %></td>   
+        </tr>
+        <tr>
+            <th>Subtotal</th>
+            <td><%= number_to_currency(@pedido.subtotal) %></td>
+        </tr>
+    </table>
+
+</div>

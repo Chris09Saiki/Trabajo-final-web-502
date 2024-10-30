@@ -1,0 +1,54 @@
+/* productos/productos_detail.css */
+
+body {
+    background-color: #f0f8ff; /* Color de fondo claro */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    padding: 20px; /* Espaciado interior */
+}
+
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #0056b3; /* Color del texto del encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.details-container {
+    max-width: 800px; /* Ancho máximo de la caja de detalles */
+    margin: 0 auto; /* Centrar la caja */
+    padding: 20px; /* Espaciado interior */
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+p {
+    font-size: 1.2em; /* Tamaño de fuente para párrafos */
+    color: #333333; /* Color del texto */
+    margin: 10px 0; /* Espacio superior e inferior entre párrafos */
+}
+
+strong {
+    color: #0056b3; /* Color para el texto en negrita */
+}
+
+.btn {
+    display: inline-block; /* Alinear el botón en línea */
+    padding: 10px 20px; /* Espaciado interior del botón */
+    font-size: 1.2em; /* Tamaño de fuente del botón */
+    color: white; /* Color del texto del botón */
+    background-color: #28a745; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    margin-top: 20px; /* Espacio superior para el botón */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    
+}
+
+.btn:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-3px); /* Efecto de elevación */
+
+}

@@ -1,0 +1,56 @@
+/* empleados/empleados_lista.css */
+
+body {
+    background-color: #f4f4f9; /* Color de fondo claro */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente moderna */
+    margin: 0; /* Eliminar márgenes */
+    padding: 20px; /* Espaciado interior */
+}
+
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #343a40; /* Color de texto oscuro */
+    margin-bottom: 30px; /* Espacio inferior */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 0 auto; /* Centrando la tabla */
+    border-collapse: collapse; /* Sin espacios entre bordes de celdas */
+    background-color: #fff; /* Fondo blanco para la tabla */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra de la tabla */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+th, td {
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centrar texto en las celdas */
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+    border-right: 1px solid #ddd; /* Línea divisoria entre columnas */
+}
+
+th:last-child, td:last-child {
+    border-right: none; /* Eliminar línea derecha de la última columna */
+}
+
+th {
+    background-color: #007bff; /* Color de fondo para el encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    font-size: 1.2em; /* Tamaño de fuente para el encabezado */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Efecto de cambio de color al pasar el mouse */
+}
+
+a {
+    color: #007bff; /* Color azul para enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}

@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag 'empleados/empleados_detail', media: 'all' %>
+<h1>Detalles del Empleado</h1>
+<p><strong>Nombre:</strong> <%= @empleado.nombre %></p>
+<p><strong>Apellido:</strong> <%= @empleado.apellido %></p>
+<p><strong>Teléfono:</strong> <%= @empleado.telefono %></p>
+<p><strong>Correo:</strong> <%= @empleado.correo %></p>
+<p><strong>Fecha de Contratación:</strong> <%= @empleado.fechas_contratacion %></p>
+<p><strong>Cargo:</strong> <%= @empleado.cargo %></p>
+
+<%= link_to 'Regresar', empleados_path, class: "btn btn-success" %> |
+<%= link_to 'Confirmar y ver productos', productos_path, class: "btn btn-success" %>

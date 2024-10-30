@@ -1,0 +1,47 @@
+/* proveedor/proveedor_lista.css */
+
+body {
+    background-color: #eef2f3; /* Color de fondo suave */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    padding: 20px; /* Espaciado interior */
+}
+
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #00b32a; /* Color del texto del encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 0 auto; /* Centrar la tabla */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+th, td {
+    padding: 15px; /* Espaciado interior */
+    text-align: center; /* Centrar el texto */
+    border: 1px solid #ff5e2e; /* Borde azul */
+}
+
+th {
+    background-color: #ff5e2e; /* Color de fondo de las cabeceras */
+    color: white; /* Color del texto de las cabeceras */
+    font-size: 1.2em; /* Tamaño de fuente para las cabeceras */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alternativo para filas */
+}
+
+tr:hover {
+    background-color: #d1ecf1; /* Color de fondo al pasar el mouse */
+    cursor: pointer; /* Cambiar cursor al pasar */
+}
+
+tr td {
+    color: #333; /* Color del texto */
+    font-size: 1em; /* Tamaño de fuente para celdas */
+}

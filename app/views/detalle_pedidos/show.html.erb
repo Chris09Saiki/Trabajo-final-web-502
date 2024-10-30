@@ -1,0 +1,8 @@
+<h1>Detalles del Pedido</h1>
+<p><strong>Fecha del Pedido:</strong> <%= @pedido.fecha_pedido %></p>
+<p><strong>Cliente:</strong> <%= @cliente.nombre %></p>
+<p><strong>Empleado:</strong> <%= @empleado.nombre %></p>
+<p><strong>Producto:</strong> <%= @producto.nombre_producto %></p>
+<p><strong>Cantidad:</strong> <%= @pedido.cantidad %></p>
+<p><strong>Precio Unitario:</strong> <%= number_to_currency(@detalle_pedido.precio_unitario) %></p>
+<p><strong>Subtotal:</strong> <%= number_to_currency(@detalle_pedido.subtotal) %></p>

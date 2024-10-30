@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag 'proveedor/proveedor_lista', media: 'all' %>
+<h1>Lista de Proveedores</h1>
+<table>
+  <tr>
+    <th>Nombre del Proveedor</th>
+    <th>Contacto</th>
+    <th>Teléfono</th>
+    <th>Correo</th>
+  </tr>
+  <% @proveedores.each do |proveedor| %>
+    <tr>
+      <td><%= proveedor.nombre_proveedor %></td>
+      <td><%= proveedor.contacto %></td>
+      <td><%= proveedor.telefono %></td>
+      <td><%= proveedor.correo %></td>
+    </tr>
+  <% end %>
+</table>

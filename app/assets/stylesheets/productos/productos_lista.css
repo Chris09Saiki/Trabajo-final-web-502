@@ -1,0 +1,50 @@
+/* productos/productos_lista.css */
+
+body {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    margin: 0; /* Eliminar márgenes */
+    padding: 20px; /* Espaciado interior */
+}
+
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #343a40; /* Color de texto oscuro */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+table {
+    width: 100%; /* Ancho total */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 0 auto; /* Centrar la tabla */
+}
+
+th, td {
+    padding: 15px; /* Espaciado interior en celdas */
+    text-align: center; /* Centrar texto en celdas */
+    border: 1px solid #dee2e6; /* Borde ligero */
+}
+
+th {
+    background-color: #007bff; /* Color de fondo para el encabezado */
+    color: white; /* Color del texto del encabezado */
+    font-size: 1.2em; /* Tamaño de fuente para el encabezado */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alternativo para filas */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Color de fondo al pasar el mouse */
+}
+
+a {
+    color: #007bff; /* Color de enlace */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}

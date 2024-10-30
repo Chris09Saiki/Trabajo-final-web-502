@@ -1,0 +1,36 @@
+<%= stylesheet_link_tag 'pedidos/pedidos_new', media: 'all' %>
+
+<h1>Realice su pedido</h1>
+
+<%= form_with(model: @pedido, local: true) do |form| %>  <!-- Crea un nuevo formulario para pedido -->
+    <div>
+      <%= form.label :producto_id %>
+      <%= form.collection_select :producto_id, @productos, :id, :nombre_producto, prompt: 'Selecciona un producto' %>
+      <!-- Genera menú desplegable para producto más una opcion vacia -->
+    </div>
+  
+    <div>
+      <%= form.label :fecha_pedido %>
+      <%= form.date_field :fecha_pedido %>
+    </div>
+  
+    <div>
+      <%= form.label :cliente_id %>
+      <%= form.number_field :cliente_id %>
+    </div>
+  
+    <div>
+      <%= form.label :empleado_id %>
+      <%= form.number_field :empleado_id %>
+    </div>
+  
+    <div>
+      <%= form.label :cantidad %>
+      <%= form.number_field :cantidad %>
+    </div>
+  
+    <div>
+      <%= form.submit 'Crear Pedido' %>
+    </div>
+  <% end %>
+  

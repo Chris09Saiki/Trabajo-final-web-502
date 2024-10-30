@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag 'clientes/clientes_detalles', media: 'all' %>
+
+<h1>Datos del Cliente</h1>
+<p><strong>Nombre:</strong> <%= @cliente.nombre %></p>
+<p><strong>Apellido:</strong> <%= @cliente.apellido %></p>
+<p><strong>Teléfono:</strong> <%= @cliente.telefono %></p>
+<p><strong>DNI:</strong> <%= @cliente.dni %></p>
+<p><strong>Email:</strong> <%= @cliente.email %></p>
+
+<%= link_to 'Editar mis datos', edit_cliente_path(@cliente), class: "btn btn-warning" %> |
+<%= link_to 'Volver a la lista de Clientes', clientes_path, class: "btn btn-secondary" %> |
+<%= link_to 'Ver Empleados', empleados_path, class: "btn btn-success" %>
+

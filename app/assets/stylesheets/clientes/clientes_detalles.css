@@ -1,0 +1,83 @@
+/* clientes/clientes_detalles.css */
+
+body {
+    background: linear-gradient(135deg, #6fb1fc, #a1c4fd); /* Color de fondo gris claro */
+    font-family: 'Arial', sans-serif;
+    padding: 20px; /* Espaciado interior */
+}
+
+.container {
+    max-width: 500px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centrar el contenedor */
+    padding: 40px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    color: #483848; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+p {
+    font-size: 1.1em; /* Tamaño de fuente del párrafo */
+    color: #444; /* Color del texto */
+    margin: 15px 0; /* Espacio entre párrafos */
+}
+
+strong {
+    color: #f11009; /* Color azul para los nombres de los campos */
+    font-weight: bold; /* Negrita */
+}
+
+.actions {
+    text-align: center; /* Centrar los enlaces */
+    margin-top: 30px; /* Espacio superior */
+}
+
+.btn {
+    padding: 12px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 1.1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    display: inline-block; /* Hacer que el botón se ajuste al contenido */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Color de fondo amarillo */
+    color: #fff; /* Color del texto */
+    padding: 12px 25px; /* Espaciado interno */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Color de fondo gris */
+    color: #fff; /* Color del texto */
+    margin: 0 10px; /* Espacio lateral */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.btn-success {
+    background-color: #28a745; /* Color de fondo verde */
+    color: #fff; /* Color del texto */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
